@@ -2,21 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  @font-face {
+    font-family: 'Karla';
+    src: url('../../public/fonts/Karla/Karla-VariableFont_wght.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Karla-italic';
+    src: url(/fonts/Karla/Karla-Italic-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: 'dmserif';
+    src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'jost';
+    src: url(/fonts/Jost/Jost-VariableFont_wght.ttf);
+  }
+  font-family: karla;
 }
 
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 245, 247, 248;
+  --background-end-rgb: 245, 247, 248;
+}
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
+  font-family: 'Karla';
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
