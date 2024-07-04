@@ -1,14 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  // Also supported by less commonly used
-  // interactiveWidget: 'resizes-visual',
-};
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,6 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden">
+      <Head>
+        <title>My Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+
       <body className={inter.className}>{children}</body>
     </html>
   );
