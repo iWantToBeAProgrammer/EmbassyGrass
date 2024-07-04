@@ -23,6 +23,11 @@
     src: url(/fonts/Jost/Jost-VariableFont_wght.ttf);
   }
   font-family: karla;
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 }
 
 :root {

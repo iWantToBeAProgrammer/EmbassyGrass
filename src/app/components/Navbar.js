@@ -30,7 +30,7 @@ const Navbar = () => {
         background
           ? "bg-secondary/80 shadow-xl border-b border-gray-200"
           : "bg-transparent"
-      } backdrop-blur-lg backdrop-filter  fixed top-0 z-10 w-full lg:ps-[150px] lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
+      } backdrop-blur-2xl backdrop-filter fixed top-0 z-10 w-full lg:ps-[150px] lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
     >
       <div className="flex-1">
         <a className="btn btn-ghost w-48 md:w-64 ">

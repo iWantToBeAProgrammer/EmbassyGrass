@@ -26,7 +26,7 @@ export default function Home() {
               </button>
             </div>
             <div className="content-right lg:h-full flex justify-center items-center gap-4 md:gap-12 lg:gap-0 lg:justify-around lg:items-end lg:flex-col mb-10 lg:mb-0 lg:me-10 lg:absolute top-0 right-0 w-full">
-              <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[19.438rem] lg:w-[16.625rem] card h-[116px] md:h-[246px] lg:h-[266px] md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
+              <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[19.438rem] lg:w-[16.625rem] card h-[116px] md:h-[246px] lg:h-[266px] md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter backdrop-blur-lg">
                 <div className="card-text leading-tight md:w-[4.375rem] flex flex-col gap-4">
                   <h1 className=" font-karla md:text-[4.375rem] text-4xl">
                     500
@@ -36,7 +36,7 @@ export default function Home() {
                   </h2>
                 </div>
               </div>
-              <div className="address-card w-[11.25rem] md:w-[25.75rem] h-[115px] md:h-[232px] ps-2 pt-2 md:ps-[1.875rem] md:pt-[1.875rem] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
+              <div className="address-card w-[11.25rem] md:w-[25.75rem] h-[115px] md:h-[232px] ps-2 pt-2 md:ps-[1.875rem] md:pt-[1.875rem] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] backdrop-filter backdrop-blur-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
