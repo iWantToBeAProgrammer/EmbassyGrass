@@ -1,6 +1,14 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+};
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

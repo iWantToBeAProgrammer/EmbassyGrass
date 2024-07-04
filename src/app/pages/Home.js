@@ -8,7 +8,7 @@ export default function Home() {
         <div className="home-content w-[100%] lg:ps-[150px] h-lvh md:px-10 px-8 lg:px-12">
           <div className="content-wrapper flex justify-center md:justify-end lg:justify-between h-full flex-col lg:gap-0 gap-12">
             <div className="content-left lg:h-full flex flex-col lg:justify-center gap-6 lg:gap-12 text-center lg:text-left md:px-0 px-6">
-              <div className="header-wrapper lg:w-[55%]">
+              <div className="header-wrapper lg:w-[60%]">
                 <div className="text-header font-['karla-italic'] font-bold lg:text-[110px] md:text-[96px] text-[30px] leading-none ">
                   One Stop Solution For Your Sport Floor Needs
                 </div>
