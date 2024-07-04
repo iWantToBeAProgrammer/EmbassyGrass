@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <Navbar />
       <div className="w-full min-h-screen lg:h-screen bg-top-background bg-cover bg-center">
-        <div className="home-content w-[100%] lg:ps-[150px] h-lvh md:px-10 px-8 lg:px-12">
-          <div className="content-wrapper flex justify-center md:justify-end lg:justify-between h-full flex-col lg:gap-0 gap-12">
+        <div className="home-content w-[100%] lg:ps-[150px] h-lvh md:px-10 px-8 lg:px-12 md:items-end lg:items-center flex items-center">
+          <div className="content-wrapper flex justify-center md:justify-end lg:justify-between h-4/5 flex-col lg:gap-0 gap-12">
             <div className="content-left lg:h-full flex flex-col lg:justify-center gap-6 lg:gap-12 text-center lg:text-left md:px-0 px-6">
               <div className="header-wrapper lg:w-[60%]">
                 <div className="text-header font-['karla-italic'] font-bold lg:text-[6.875rem] md:text-8xl text-[1.875rem] leading-none ">
@@ -28,7 +28,9 @@ export default function Home() {
             <div className="content-right lg:h-full flex justify-center items-center gap-4 md:gap-12 lg:gap-0 lg:justify-around lg:items-end lg:flex-col mb-10 lg:mb-0 lg:me-10 lg:absolute top-0 right-0 w-full">
               <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[19.438rem] lg:w-[16.625rem] card h-[116px] md:h-[246px] lg:h-[266px] md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
                 <div className="card-text leading-tight md:w-[4.375rem] flex flex-col gap-4">
-                  <h1 className=" font-karla md:text-[4.375rem] text-4xl">500</h1>
+                  <h1 className=" font-karla md:text-[4.375rem] text-4xl">
+                    500
+                  </h1>
                   <h2 className="font-karla md:text-[1.875rem] text-xl">
                     Portofolio Lapangan
                   </h2>
