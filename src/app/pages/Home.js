@@ -9,32 +9,32 @@ export default function Home() {
           <div className="content-wrapper flex justify-center md:justify-end lg:justify-between h-full flex-col lg:gap-0 gap-12">
             <div className="content-left lg:h-full flex flex-col lg:justify-center gap-6 lg:gap-12 text-center lg:text-left md:px-0 px-6">
               <div className="header-wrapper lg:w-[60%]">
-                <div className="text-header font-['karla-italic'] font-bold lg:text-[110px] md:text-[96px] text-[30px] leading-none ">
+                <div className="text-header font-['karla-italic'] font-bold lg:text-[6.875rem] md:text-8xl text-[1.875rem] leading-none ">
                   One Stop Solution For Your Sport Floor Needs
                 </div>
               </div>
               <div className="desc-wrapper lg:w-[65%] ">
-                <p className="text-desc font-['karla-italic'] font-medium text-[18px] md:text-[32px]  md:leading-none ">
+                <p className="text-desc font-['karla-italic'] font-medium text-[1.125rem] md:text-[2rem]  md:leading-none ">
                   CV. Embassy Sport Indonesia adalah importir untuk rumput
                   sintetis, karpet badminton & rumput sport floor, juga produsen
                   PP interlock yang memiliki kualitas terbaik dengan harga
                   terjangkau.
                 </p>
               </div>
-              <button className="btn w-full lg:w-[287px] lg:py-[20px] lg:px-[40px] h-[31px] rounded-xl md:rounded-badge md:h-[50px] lg:h-[63px] text-[18px] shadow-xl cursor-pointer">
+              <button className="btn w-full lg:w-[17.938rem] lg:py-[20px] lg:px-[40px] h-[31px] rounded-xl md:rounded-badge md:h-[50px] lg:h-[63px] text-[1.125rem] shadow-xl cursor-pointer">
                 Hubungi Sekarang &rarr;
               </button>
             </div>
             <div className="content-right lg:h-full flex justify-center items-center gap-4 md:gap-12 lg:gap-0 lg:justify-around lg:items-end lg:flex-col mb-10 lg:mb-0 lg:me-10 lg:absolute top-0 right-0 w-full">
-              <div className="content-card md:block flex justify-center items-center w-[123px] md:w-[311px] lg:w-[266px] card h-[116px] md:h-[246px] lg:h-[266px] md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
-                <div className="card-text leading-tight md:w-[70px]">
-                  <h1 className=" font-karla md:text-[70px] text-[40px]">500</h1>
-                  <h2 className="font-karla md:text-[30px] text-[20px]">
+              <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[19.438rem] lg:w-[16.625rem] card h-[116px] md:h-[246px] lg:h-[266px] md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
+                <div className="card-text leading-tight md:w-[4.375rem] flex flex-col gap-4">
+                  <h1 className=" font-karla md:text-[4.375rem] text-4xl">500</h1>
+                  <h2 className="font-karla md:text-[1.875rem] text-xl">
                     Portofolio Lapangan
                   </h2>
                 </div>
               </div>
-              <div className="address-card w-[180px] md:w-[412px] h-[115px] md:h-[232px] ps-2 pt-2 md:ps-[30px] md:pt-[30px] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
+              <div className="address-card w-[11.25rem] md:w-[25.75rem] h-[115px] md:h-[232px] ps-2 pt-2 md:ps-[1.875rem] md:pt-[1.875rem] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] backdrop-filter filter blur-2xl backdrop-blur-2xl glass">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -55,10 +55,10 @@ export default function Home() {
                   />
                 </svg>
                 <div className="address mt-2 md:mt-4">
-                  <h1 className="address-title font-karla md:text-[20px] text-[10px] font-extrabold">
+                  <h1 className="address-title font-karla md:text-xl text-xs font-extrabold">
                     CV. EMBASSY SPORT INDONESIA
                   </h1>
-                  <p className="address-desc font-karla md:text-[16px] text-[8px] font-medium">
+                  <p className="address-desc font-karla md:text-base text-[0.5rem] font-medium">
                     Jl. Kh. Hasyim Ashari No. 98, Pinang, Ciledug RT.003/RW.002,
                     Pinang, Kec. Pinang, Kota Tangerang, Banten 15145
                   </p>
