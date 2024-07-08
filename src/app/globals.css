@@ -47,9 +47,10 @@
 
 body {
   font-family: 'Karla';
+  overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
+      to bottom, For Your
       transparent,
       rgb(var(--background-end-rgb))
     )
