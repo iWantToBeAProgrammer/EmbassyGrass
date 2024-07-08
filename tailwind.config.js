@@ -24,7 +24,7 @@ module.exports = {
         "karla-italic": ["karla-italic"],
         karla: ["karla"],
         dmserif: ["dmserif"],
-        jost: ["jost"]
+        jost: ["jost"],
       },
       backgroundImage: {
         "top-background": "url('/assets/Images/Background_Home.jpg')",

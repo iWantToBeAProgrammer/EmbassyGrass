@@ -8,12 +8,15 @@ import Footer from "./pages/Footer";
 export default function Page() {
   return (
     <>
-      <Home />
-      <About />
-      <Product />
-      <Contact />
-      <Location />
-      <Footer />
+      <div className="mx-auto overflow-x-hidden">
+        <Home />
+        <About />
+
+        <Product />
+        <Contact />
+        <Location />
+        <Footer />
+      </div>
     </>
   );
 }

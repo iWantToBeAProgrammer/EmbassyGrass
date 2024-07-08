@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [background, setBackground] = useState(false);
-  const topX = 50;
+  const topX = 10;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,10 +30,10 @@ const Navbar = () => {
         background
           ? "bg-secondary/80 shadow-xl border-b border-gray-200"
           : "bg-transparent"
-      } backdrop-blur-lg backdrop-filter  fixed top-0 z-10 w-full lg:ps-[150px] lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
+      } fixed top-0 z-10 w-full lg:ps-[150px] lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
     >
       <div className="flex-1">
-        <a className="btn btn-ghost w-64 ">
+        <a className="btn btn-ghost w-48 md:w-64 ">
           <Image
             src={"/assets/Images/Logo.png"}
             alt=""
@@ -46,14 +46,14 @@ const Navbar = () => {
       <div className="flex-none lg:flex hidden">
         <ul className="menu menu-horizontal px-4">
           <li>
-            <a className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest">
+            <Link className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest" href="#home">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <Link
               className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest"
-              href="#about-us"
+              href="#about"
               scroll={true}
             >
               About us
