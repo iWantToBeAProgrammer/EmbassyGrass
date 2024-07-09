@@ -1,28 +1,29 @@
 "use client";
-import { useEffect, useState } from "react";
 
+import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import ClientCard from "../components/ClientCard";
 
 export default function Product() {
-  let windowWidth;
-  if (typeof window != undefined) {
-    windowWidth = window.innerWidth;
-  }
-
-  const [windowSize, setWindowSize] = useState(windowWidth);
+  const [windowSize, setWindowSize] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   useEffect(() => {
     const handleResize = () => {
       setWindowSize(window.innerWidth);
     };
-    if (typeof window != undefined) {
+
+    if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize);
     }
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
   }, []);
-
   return (
     <>
       <div className="product md:mt-32 md:mb-48 mt-12 mb-16 flex justify-center items-center w-full">
