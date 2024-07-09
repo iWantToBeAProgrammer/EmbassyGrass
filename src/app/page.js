@@ -11,7 +11,6 @@ export default function Page() {
       <div className="mx-auto overflow-x-hidden">
         <Home />
         <About />
-
         <Product />
         <Contact />
         <Location />

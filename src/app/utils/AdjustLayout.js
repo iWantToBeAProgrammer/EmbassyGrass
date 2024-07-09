@@ -1,12 +1,10 @@
-export function adjustLayoutForScale() {
-  const scale = window.devicePixelRatio;
-  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+// export function adjustLayoutForScale() {
+//   const scale = window.devicePixelRatio;
 
-  if (!isMobile) {
-    if (scale > 1) {
-      document.documentElement.style.fontSize = `${16 / scale}px`;
-    } else {
-      document.documentElement.style.fontSize = "16px";
-    }
-  }
-}
+//     if (scale > 1) {
+//       document.documentElement.style.fontSize = `${16 / scale}px`;
+//     } else {
+//       document.documentElement.style.fontSize = "16px";
+//     }
+//   }
+

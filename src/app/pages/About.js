@@ -13,7 +13,7 @@ export default function About() {
                 className="object-center object-cover md:rounded-[2rem] rounded-3xl lg:rounded-[4rem] md:aspect-auto aspect-square lg:aspect-square"
               />
             </div>
-            <div className="first-text-wrapper flex flex-col gap-2 md:gap-4 w-11/12 md:leading-normal leading-tight md:w-3/5 lg:w-1/2 md:pt-0 pt-4 lg:pt-12">
+            <div className="first-text-wrapper flex flex-col gap-2 md:gap-4 w-11/12 md:leading-normal leading-tight md:w-3/5 lg:w-1/2 md:pt-0 pt-4 lg:pt-8">
               <h1 className="first-hero-title text-secondary lg:text-5xl md:text-3xl tracking-tigh text-[0.8rem] font-normal font-['dmserif']">
                 Inovasi Lapangan Terbaik
               </h1>
