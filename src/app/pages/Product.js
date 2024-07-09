@@ -5,17 +5,16 @@ import Card from "../components/Card";
 import ClientCard from "../components/ClientCard";
 
 export default function Product() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  let windowWidth;
+  if (typeof window != undefined) {
+    windowWidth = window.innerWidth;
+  }
+
+  const [windowSize, setWindowSize] = useState(windowWidth);
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+      setWindowSize(window.innerWidth);
     };
     if (typeof window != undefined) {
       window.addEventListener("resize", handleResize);
@@ -61,13 +60,13 @@ export default function Product() {
                 <Card
                   img="/assets/Images/KarpetBadminton.jpg"
                   desc="Importir PP Interlock Di Indonesia Yang Siap Menjual Dengan Harga Termurah"
-                  type={windowSize.width < 768 ? "base" : "wide"}
+                  type={windowSize < 768 ? "base" : "wide"}
                   title={"Karpet Badminton"}
                 />
                 <Card
                   img="/assets/Images/LantaiVinyl.jpg"
                   desc="Importir Lantai Vinyl Di Indonesia Yang Siap Menjual Dengan Harga Termurah"
-                  type={windowSize.width < 768 ? "base" : "wide"}
+                  type={windowSize < 768 ? "base" : "wide"}
                   title={"Lantai Vinyl"}
                 />
               </div>
