@@ -6,7 +6,7 @@ export default function Home() {
       <Navbar />
       <div className="w-full min-h-screen lg:h-screen bg-top-background bg-cover bg-center" id="home">
         <div className="home-content w-[100%] lg:ps-[150px] h-lvh md:px-10 px-8 lg:px-12 md:items-end lg:items-center flex items-center">
-          <div className="content-wrapper flex justify-center md:justify-end lg:justify-between h-4/5 flex-col lg:gap-0 gap-12">
+          <div className="content-wrapper flex justify-center md:justify-center lg:justify-between h-4/5 flex-col lg:gap-0 gap-12">
             <div className="content-left lg:h-full flex flex-col lg:justify-center gap-6 lg:gap-12 text-center lg:text-left md:px-0 px-6">
               <div className="header-wrapper lg:w-[60%]">
                 <div className="text-header font-['karla-italic'] font-bold lg:text-[5rem] md:text-7xl text-[1.875rem] leading-none ">
@@ -14,7 +14,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="desc-wrapper lg:w-[65%]">
-                <p className="text-desc font-['karla-italic'] font-medium text-[1.125rem] md:text-[1.4rem]  md:leading-none ">
+                <p className="text-desc font-['karla-italic'] font-medium text-[1.125rem] md:text-[1.4rem]  md:leading-none md:visible">
                   CV. Embassy Sport Indonesia adalah importir untuk rumput
                   sintetis, karpet badminton & rumput sport floor, juga produsen
                   PP interlock yang memiliki kualitas terbaik dengan harga
@@ -26,7 +26,7 @@ export default function Home() {
               </button>
             </div>
             <div className="content-right lg:h-full flex justify-center items-center gap-4 md:gap-12 lg:gap-0 lg:justify-around lg:items-end lg:flex-col mb-10 lg:mb-0 lg:me-10 lg:absolute top-0 right-0 w-full">
-              <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[19.438rem] lg:w-[14rem] card h-[116px] md:h-[246px] lg:h-[13.75rem] md:ps-[1.5rem] md:pt-[2.5rem] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter backdrop-blur-sm">
+              <div className="content-card md:block flex justify-center items-center w-[7.6rem] md:w-[16rem] lg:w-[14rem] card h-[116px] md:h-[15rem] lg:h-[13.75rem] md:ps-[1.5rem] md:pt-[2.5rem] border border-solid border-black border-opacity-40 shadow-xl rounded-[1rem] p-4 md:rounded-[4rem] backdrop-filter backdrop-blur-sm">
                 <div className="card-text leading-tight md:w-[4.375rem] flex flex-col gap-4">
                   <h1 className=" font-karla md:text-[4.375rem] text-4xl">
                     500
