@@ -9,20 +9,21 @@ export default function Product() {
     width: window.innerWidth,
     height: window.innerHeight,
   });
-  if (typeof window !== "undefined") {
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    if (typeof window != undefined) {
       window.addEventListener("resize", handleResize);
+    }
 
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-  }
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <div className="product md:mt-32 md:mb-48 mt-12 mb-16 flex justify-center items-center w-full">
