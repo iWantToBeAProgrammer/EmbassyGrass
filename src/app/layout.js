@@ -1,4 +1,3 @@
-
 import { Inter } from "next/font/google";
 import "./globals.css"; // Adjust the import path as needed
 import ClientLayout from "./clientLayout";
@@ -9,6 +8,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className="scroll-smooth">
       <ClientLayout>{children}</ClientLayout>

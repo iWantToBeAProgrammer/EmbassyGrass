@@ -6,7 +6,9 @@ import ClientCard from "../components/ClientCard";
 
 export default function Product() {
   const [windowSize, setWindowSize] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
+    typeof window !== "undefined"
+      ? window.innerWidth
+      : document.documentElement.clientWidth
   );
 
   useEffect(() => {
@@ -24,9 +26,10 @@ export default function Product() {
       }
     };
   }, []);
+
   return (
     <>
-      <div className="product md:mt-32 md:mb-48 mt-12 mb-16 flex justify-center items-center w-full">
+      <div className="product md:mt-32 md:mb-24 mt-12 mb-16 lg:mb-16 flex justify-center items-center w-full">
         <div className="product-wrapper w-3/4 md:w-full lg:w-3/4 flex flex-col items-center gap-4 md:gap-12 md:px-24">
           <div className="product-title md:w-3/4 text-center md:px-0 px-4">
             <h1 className="lg:text-8xl font-['dmserif'] font-normal text-[#292F36] md:text-6xl text-4xl">
@@ -76,27 +79,27 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="client w-full flex justify-center mb-32">
-        <div className="client-wrapper bg-primary w-3/4 py-20 px-8 flex flex-col items-center justify-center gap-12 rounded-[4rem]">
-          <h1 className="font-karla-italic font-medium lg:text-6xl md:text-4xl text-[#272343]">
+      <div className="client w-full flex justify-center mb-16 md:mb-24 lg:mb-32">
+        <div className="client-wrapper bg-primary w-11/12 md:w-3/4 lg:w-2/3 py-8 md:py-20 px-12 flex flex-col items-center justify-center gap-6 md:gap-12 rounded-[3rem] md:rounded-[4rem]">
+          <h1 className="font-karla-italic font-medium lg:text-6xl text-xl md:text-4xl text-[#272343]">
             What Client Says About Us
           </h1>
 
-          <div className="clients flex gap-8">
-            <ClientCard
-              name={"Retno L"}
-              work={"Pebisnis Olahraga"}
-              img={"/assets/Images/testimonial.png"}
-              comment={
-                "Terima kasih, pemasangan rumput sintetisnya sangat rapih & berkualitas, harga produknya juga sangat kompetitif."
-              }
-            />
+          <div className="clients flex gap-2 md:gap-6 lg:gap-14">
             <ClientCard
               name={"Agus E"}
               work={"Pebisnis Olahraga"}
               img={"/assets/Images/testimonial1.png"}
               comment={
                 "Thanks, sudah membantu pemasangan interlock lapangan futsal saya, pemasangan rapih, pekerjanya juga bekerja dengan sangat baik."
+              }
+            />
+            <ClientCard
+              name={"Retno L"}
+              work={"Pebisnis Olahraga"}
+              img={"/assets/Images/testimonial.png"}
+              comment={
+                "Terima kasih, pemasangan rumput sintetisnya sangat rapih & berkualitas, harga produknya juga sangat kompetitif."
               }
             />
             <ClientCard
