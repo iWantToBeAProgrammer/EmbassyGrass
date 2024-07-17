@@ -1,10 +1,14 @@
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-screen lg:h-screen bg-top-background bg-cover bg-center" id="home">
+      <div
+        className="w-full min-h-screen lg:h-screen bg-top-background bg-cover bg-center"
+        id="home"
+      >
         <div className="home-content w-[100%] lg:ps-[150px] h-lvh md:px-10 px-8 lg:px-12 md:items-end lg:items-center flex items-center">
           <div className="content-wrapper flex justify-center md:justify-center lg:justify-between h-4/5 flex-col lg:gap-0 gap-12">
             <div className="content-left lg:h-full flex flex-col lg:justify-center gap-6 lg:gap-12 text-center lg:text-left md:px-0 px-6">
@@ -22,7 +26,7 @@ export default function Home() {
                 </p>
               </div>
               <button className="btn w-full lg:w-[15rem] lg:py-[15px] lg:px-[20px] h-[31px] rounded-xl md:rounded-badge md:h-[50px] lg:h-[3.4rem] text-[1.125rem] shadow-xl cursor-pointer">
-                Hubungi Sekarang &rarr;
+                <Link href="#contact">Hubungi Sekarang &rarr;</Link>
               </button>
             </div>
             <div className="content-right lg:h-full flex justify-center items-center gap-4 md:gap-12 lg:gap-0 lg:justify-around lg:items-end lg:flex-col mb-10 lg:mb-0 lg:me-10 lg:absolute top-0 right-0 w-full">
@@ -81,6 +85,7 @@ export default function Home() {
             dari importir rumput sintetis.
           </p>
         </div>
+
         <button className="btn btn-secondary md:block hidden text-base-100 btn-sm lg:btn-md font-karla text-[14px] lg:h-12 h-[36px] lg:text-lg font-normal rounded-2xl me-[20px]">
           Tentang Kami &rarr;
         </button>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function About() {
   return (
     <>
@@ -42,7 +43,7 @@ export default function About() {
               </p>
               <div className="flex">
                 <button className="btn btn-xs md:btn-md bg-secondary text-white text-[0.8rem] lg:text-3xl md:text-lg rounded-2xl md:px-4 font-normal mt-3 md:mt-8">
-                  Produk Kami &rarr;
+                  <Link href={"#product"}>Produk Kami &rarr;</Link>
                 </button>
               </div>
             </div>
