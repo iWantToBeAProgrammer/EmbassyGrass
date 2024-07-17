@@ -29,7 +29,7 @@ export default function Product() {
 
   return (
     <>
-      <div className="product md:mt-32 md:mb-24 mt-12 mb-16 lg:mb-16 flex justify-center items-center w-full">
+      <div className="product md:mt-32 md:mb-24 mt-12 mb-16 lg:mb-16 flex justify-center items-center w-full" id="product">
         <div className="product-wrapper w-3/4 md:w-full lg:w-3/4 flex flex-col items-center gap-4 md:gap-12 md:px-24">
           <div className="product-title md:w-3/4 text-center md:px-0 px-4">
             <h1 className="lg:text-8xl font-['dmserif'] font-normal text-[#292F36] md:text-6xl text-4xl">

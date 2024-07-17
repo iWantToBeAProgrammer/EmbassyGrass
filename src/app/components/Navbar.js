@@ -6,7 +6,16 @@ import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [background, setBackground] = useState(false);
+  const [isClosed, setIsClosed] = useState(false);
   const topX = 10;
+
+  const linkClicked = () => {
+    if (typeof document !== "undefined") {
+      const sideBar = document.getElementById("my-drawer");
+
+      sideBar.checked = false;
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +39,7 @@ const Navbar = () => {
         background
           ? "bg-secondary/80 shadow-xl border-b border-gray-200"
           : "bg-transparent"
-      } fixed top-0 z-10 w-full lg:ps-[150px] lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
+      } fixed top-0 z-10 w-full lg:ps-36 lg:pe-[30%] md:ps-20 md:pe-20 pe-8`}
     >
       <div className="flex-1">
         <a className="btn btn-ghost w-48 md:w-64 ">
@@ -46,7 +55,10 @@ const Navbar = () => {
       <div className="flex-none lg:flex hidden">
         <ul className="menu menu-horizontal px-4">
           <li>
-            <Link className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest" href="#home">
+            <Link
+              className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest"
+              href="#home"
+            >
               Home
             </Link>
           </li>
@@ -60,14 +72,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest">
-              Products
-            </a>
+            <Link
+              className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest"
+              href="#product"
+              scroll={true}
+            >
+              Product
+            </Link>
           </li>
           <li>
-            <a className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest">
+            <Link
+              className="text-base-100 text-lg font-['karla'] font-light capitalize tracking-widest"
+              href="#contact"
+              scroll={true}
+            >
               Contact us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -98,11 +118,47 @@ const Navbar = () => {
           ></label>
           <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
             {/* Sidebar content here */}
-            <li>
-              <a>Sidebar Item 1</a>
+            <li className="mb-6">
+              <Image src="/assets/Images/Logo2.png" width={270} height={200} />
             </li>
             <li>
-              <a>Sidebar Item 2</a>
+              <Link
+                className="text-neutral font-normal text-lg font-['karla'] capitalize tracking-widest"
+                href="#home"
+                onClick={linkClicked()}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-neutral font-normal text-lg font-['karla'] capitalize tracking-widest"
+                href="#about"
+                scroll={true}
+                onClick={() => linkClicked()}
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-neutral font-normal text-lg font-['karla'] capitalize tracking-widest"
+                href="#product"
+                scroll={true}
+                onClick={() => linkClicked()}
+              >
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-neutral font-normal text-lg font-['karla'] capitalize tracking-widest"
+                href="#contact"
+                scroll={true}
+                onClick={() => linkClicked()}
+              >
+                Contact us
+              </Link>
             </li>
           </ul>
         </div>

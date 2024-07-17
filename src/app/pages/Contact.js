@@ -8,7 +8,7 @@ import styles from "../styles.module.css";
 export default function Contact() {
   return (
     <>
-      <div className="contact w-full flex items-center relative mb-16 lg:mb-32">
+      <div className="contact w-full flex items-center relative mb-16 lg:mb-32" id="contact">
         <div className="contact-wrapper w-3/4 bg-primary py-4 lg:py-12 ps-8 rounded-tr-[8rem] md:rounded-tr-[13.2rem] lg:rounded-tr-[25rem]">
           <div className="contact-body w-2/3">
             <h1 className="text-[#292F36] lg:text-5xl text-xs md:text-2xl font-normal font-dmserif md:mb-1 lg:mb-8">
@@ -54,7 +54,7 @@ export default function Contact() {
           src="/assets/Images/SocialMedia_Background.jpg"
           width={950}
           height={200}
-          className="w-[50%] max-h-[8rem] md:max-h-[12.5rem] lg:max-h-[400px] absolute right-0 rounded-bl-[7.5rem] md:rounded-bl-[15rem] lg:rounded-bl-[20rem] lg:top-20"
+          className="w-[50%] max-h-[6.8rem] md:max-h-[12.5rem] lg:max-h-[27rem] absolute right-0 rounded-bl-[7.5rem] md:rounded-bl-[15rem] lg:rounded-bl-[20rem] lg:top-20"
         />
       </div>
     </>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import FooterX from "../../../public/assets/Icons/footer-x.svg";
 import FooterFacebook from "../../../public/assets/Icons/footer-facebook.svg";
 import FooterInstagram from "../../../public/assets/Icons/footer-instagram.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,20 +31,20 @@ const Footer = () => {
               <h6 className="footer-title text-neutral opacity-100 font-dmserif capitalize font-normal tracking-wider lg:text-2xl">
                 Halaman
               </h6>
-              <a className="link link-hover">Home</a>
-              <a className="link link-hover">About</a>
-              <a className="link link-hover">Product</a>
-              <a className="link link-hover">Contact</a>
+              <Link className="link link-hover" href={"#home"}>Home</Link>
+              <Link className="link link-hover" href={"#about"}>About</Link>
+              <Link className="link link-hover" href={"#product"}>Product</Link>
+              <Link className="link link-hover" href={"#contact"}>Contact</Link>
             </nav>
             <nav className="flex flex-col gap-1 md:gap-4 lg:gap-10 lg:text-xl md:text-sm text-[0.475rem]">
               <h6 className="footer-title text-neutral opacity-100 font-dmserif capitalize font-normal tracking-wider lg:text-2xl">
                 Produk Kami
               </h6>
-              <a className="link link-hover">Rumput Sintesis</a>
-              <a className="link link-hover">Rumput Futsal</a>
-              <a className="link link-hover">Karpet Badminton</a>
-              <a className="link link-hover">PP Interlock</a>
-              <a className="link link-hover">Lantai Vinyl</a>
+              <Link className="link link-hover" href={"#product"}>Rumput Sintesis</Link>
+              <Link className="link link-hover" href={"#product"}>Rumput Futsal</Link>
+              <Link className="link link-hover" href={"#product"}>Karpet Badminton</Link>
+              <Link className="link link-hover" href={"#product"}>PP Interlock</Link>
+              <Link className="link link-hover" href={"#product"}>Lantai Vinyl</Link>
             </nav>
             <nav className="flex flex-col gap-1 md:gap-4 lg:gap-10 lg:text-xl md:text-sm text-[0.475rem]">
               <h6 className="footer-title text-neutral opacity-100 font-dmserif capitalize font-normal tracking-wider lg:text-2xl">
